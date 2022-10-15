@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="old save data level" hidden="false" id="1" name="_oldsavedatalevel" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="new save data level" hidden="false" id="2" name="_newsavedatalevel" order="1"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="old app name" hidden="false" id="3" name="_oldappname" order="2"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="new app name" hidden="false" id="4" name="_newappname" order="3"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="consumables list" hidden="false" id="5" name="_consumableslist" order="4"/>
+        <map defaultValue="map" desc="" dropdown="" fullname="old consumable quantities" hidden="false" id="6" name="_oldconsumablequantities" order="5" value="map"/>
+        <map defaultValue="map" desc="" dropdown="" fullname="new consumable quantities" hidden="false" id="7" name="_newconsumablequantities" order="6" value="map"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="old data exists" hidden="false" id="8" name="_olddataexists" order="7"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="new data exists" hidden="false" id="9" name="_newdataexists" order="8"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
+            <event displayName="Click" enabled="true" id="3" name="event-mouse-press-release" order="3" repeats="true"/>
+        </events>
+    </snippet>
+</pack>

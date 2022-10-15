@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <comment-wrapper comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-val-0-3 comment="false" x="37" y="60">
+                            <int id="0" val="save test"/>
+                        </set-val-0-3>
+                        <if comment="false" x="37" y="80">
+                            <group eventID="1" id="-1">
+                                <use-app-dir-with-app-name comment="false" x="48" y="110">
+                                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                </use-app-dir-with-app-name>
+                            </group>
+                            <has-save-data-with-app-name comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                            </has-save-data-with-app-name>
+                        </if>
+                        <load-game comment="false" x="37" y="147">
+                            <group eventID="1" id="-1"/>
+                        </load-game>
+                    </group>
+                    <int id="0" val="simple flow, no comparison"/>
+                </comment-wrapper>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="1">
+        <comment-wrapper comment="false" x="421" y="20">
+            <group eventID="1" id="-1">
+                <set-val-0-3 comment="false" x="432" y="40">
+                    <int id="0" val="save test"/>
+                </set-val-0-3>
+                <set-val-0-4 comment="false" x="432" y="60">
+                    <int id="0" val="save test new name"/>
+                </set-val-0-4>
+                <set-val-0-1 comment="false" x="432" y="80">
+                    <int id="0" val="0"/>
+                </set-val-0-1>
+                <set-val-0-2 comment="false" x="432" y="100">
+                    <int id="0" val="0"/>
+                </set-val-0-2>
+                <set-val-0-8 comment="false" x="432" y="120">
+                    <has-save-data-with-app-name comment="false" id="0" x="0" y="0">
+                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                    </has-save-data-with-app-name>
+                </set-val-0-8>
+                <set-val-0-9 comment="false" x="432" y="150">
+                    <has-save-data-with-app-name comment="false" id="0" x="0" y="0">
+                        <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                    </has-save-data-with-app-name>
+                </set-val-0-9>
+                <if comment="false" x="432" y="180">
+                    <group eventID="1" id="-1">
+                        <comment-long comment="false" x="443" y="210">
+                            <int id="0" val="this is the case for people who played the old version and then updated and played the new version"/>
+                        </comment-long>
+                        <comment-long comment="false" x="443" y="290">
+                            <int id="0" val="since they will have conflicting save data, you can determine which one would be best to keep, or you can load data from both and ask the player which one they want"/>
+                        </comment-long>
+                        <comment-wrapper comment="false" x="443" y="370">
+                            <group eventID="1" id="-1">
+                                <use-app-dir-with-app-name comment="false" x="454" y="390">
+                                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                </use-app-dir-with-app-name>
+                                <load-game comment="false" x="454" y="415">
+                                    <group eventID="1" id="-1"/>
+                                </load-game>
+                                <set-val-0-1 comment="false" x="454" y="472">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-1>
+                                <restore-game-attributes comment="false" x="454" y="497"/>
+                            </group>
+                            <int id="0" val="load old data"/>
+                        </comment-wrapper>
+                        <comment-wrapper comment="false" x="443" y="529">
+                            <group eventID="1" id="-1">
+                                <use-app-dir-with-app-name comment="false" x="454" y="549">
+                                    <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                                </use-app-dir-with-app-name>
+                                <load-game comment="false" x="454" y="574">
+                                    <group eventID="1" id="-1"/>
+                                </load-game>
+                                <set-val-0-2 comment="false" x="454" y="631">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-2>
+                                <restore-game-attributes comment="false" x="454" y="656"/>
+                            </group>
+                            <int id="0" val="load new data"/>
+                        </comment-wrapper>
+                        <if comment="false" x="443" y="688">
+                            <group eventID="1" id="-1">
+                                <use-app-dir-with-app-name comment="false" x="454" y="718">
+                                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                </use-app-dir-with-app-name>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                                <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="443" y="755">
+                            <group eventID="1" id="-1">
+                                <use-app-dir-with-app-name comment="false" x="454" y="775">
+                                    <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                                </use-app-dir-with-app-name>
+                            </group>
+                        </else>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-0-8 comment="false" id="0" x="0" y="0"/>
+                        <get-val-0-9 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+                <else-if comment="false" x="432" y="824">
+                    <group eventID="1" id="-1">
+                        <comment-short comment="false" x="443" y="849">
+                            <int id="0" val="first-time updaters from the old version will end up here"/>
+                        </comment-short>
+                        <use-app-dir-with-app-name comment="false" x="443" y="869">
+                            <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                        </use-app-dir-with-app-name>
+                    </group>
+                    <get-val-0-8 comment="false" id="0" x="0" y="0"/>
+                </else-if>
+                <else comment="false" x="432" y="906">
+                    <group eventID="1" id="-1">
+                        <comment-short comment="false" x="443" y="926">
+                            <int id="0" val="new players will end up here"/>
+                        </comment-short>
+                        <use-app-dir-with-app-name comment="false" x="443" y="946">
+                            <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                        </use-app-dir-with-app-name>
+                    </group>
+                </else>
+                <load-game comment="false" x="432" y="983">
+                    <group eventID="1" id="-1"/>
+                </load-game>
+            </group>
+            <int id="0" val="comparing save data and choosing the more advanced one automatically"/>
+        </comment-wrapper>
+    </group>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Level (click to increment): "/>
+                        <get-game-val-0 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="10"/>
+                    <int id="2" val="10"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="70">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Level loaded from old save data: "/>
+                        <get-val-0-1 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="10"/>
+                    <int id="2" val="30"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="100">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Level loaded from new save data: "/>
+                        <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="10"/>
+                    <int id="2" val="50"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-game-val-0 comment="false" x="26" y="42">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-game-val-0>
+                <save-game comment="false" x="26" y="72">
+                    <group eventID="3" id="-1"/>
+                </save-game>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+</groups>

@@ -1,0 +1,29 @@
+# Generic
+.DS_Store
+
+# Generated files. These should always be ignored.
+.cache/**
+scenes/*.txt
+**/*.bak
+
+# For 1x source, ignore scaled graphics
+resources/*@*.png
+resources/*@*.fnt
+
+# Optional, ignore all folder icons.
+folder-*.png
+
+# Automatically generated images.
+# Don't ignore these if they've been replaced.
+logo.png
+master-icon.png
+win8-splash.png
+win8-tile.png
+
+# Same as above, but include scaled versions
+inner-joystick*.png
+outer-joystick*.png
+ios-splash*.png
+ipad-splash*.png
+iphone-splash*.png
+preloader*.png
