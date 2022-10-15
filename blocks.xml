@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<palette>
+
+	<block
+		tag="has-save-data-with-app-name"
+		spec="save data exists for app name %0"
+		code="com.polydes.oldsaverestore.OldSaveRestore.hasSaveData(#0, &quot;mySave&quot;)"
+		type="normal"
+		color="red"
+		returns="boolean">
+		<fields>
+			<text order="0" />
+		</fields>
+	</block>
+	
+	<block
+		tag="use-app-dir-with-app-name"
+		spec="use app storage dir for app name %0"
+		code="com.polydes.oldsaverestore.OldSaveRestore.setAppStorageDirectoryForAppName(#0);"
+		type="action"
+		color="red"
+		returns="void">
+		<fields>
+			<text order="0" />
+		</fields>
+	</block>
+
+</palette>

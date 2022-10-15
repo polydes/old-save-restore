@@ -1,0 +1,7 @@
+name=Old Save Restore
+id=com.polydes.oldsaverestore
+description=Restore old application data after name change
+author=Justin Espedal
+website=http://www.stencyl.com
+version=1.0
+compatibility=all
